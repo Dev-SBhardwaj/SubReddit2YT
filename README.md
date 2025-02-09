@@ -33,7 +33,7 @@ Define the path where downloaded videos should be saved:
 
     download_dir = r'path/directory'
 
-2. Gemini AI (or Alternative AI) Configuration
+### 2. Gemini AI (or Alternative AI) Configuration
 
 The Title.py file uses Gemini AI to generate a title, description, and hashtags. If you prefer to use another AI service, make sure you add and configure the appropriate API keys.
 
@@ -45,7 +45,7 @@ The Title.py file uses Gemini AI to generate a title, description, and hashtags.
 
     If you switch to another AI, update the code accordingly and ensure that the API key is properly configured.
 
-3. YouTube Configuration
+### 3. YouTube Configuration
 
 Before uploading videos to YouTube, update your YouTube API credentials in the relevant configuration section (likely within a dedicated configuration file or within the upload script):
 
@@ -58,7 +58,7 @@ Before uploading videos to YouTube, update your YouTube API credentials in the r
     Project ID:
     Update the "project_id": "" field with the project ID obtained during your YouTube API authentication setup.
 
-Usage
+### Usage
 
     Clone the Repository:
 
@@ -77,15 +77,21 @@ export GEMINI_API_KEY='your_gemini_api_key'
 
 (For Windows, use set GEMINI_API_KEY=your_gemini_api_key)
 
-Run the Automation: Execute the scripts in the following order (if not automated via a main script):
+### Prerequisites
 
-    python GetVid.py
-    python Title.py
-    python UploadToYouTube.py
+Before running the application, ensure you have installed the necessary libraries. In particular, install the yt_dlp library:
 
-    (Adjust script names if different in your repository.)
+pip install yt_dlp
 
-Contributing
+### Execution
+
+After configuring your API keys, client IDs, and secrets, you can run the main application using your favorite Python IDE or via the command line:
+
+python main.py
+
+This will execute the entire automation process, including video downloading, title and description generation, and uploading to YouTube.
+
+### Contributing
 
 Feel free to fork this repository, make modifications, add features, or update the code as needed. Contributions are always welcome! Please follow the standard GitHub flow for your pull requests.
 License
