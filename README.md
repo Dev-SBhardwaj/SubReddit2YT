@@ -73,7 +73,7 @@ Configure the Settings:
 
 Set Environment Variables (for Gemini AI): Ensure your Gemini API key is set in your system environment:
 
-export GEMINI_API_KEY='your_gemini_api_key'
+    export GEMINI_API_KEY='your_gemini_api_key'
 
 (For Windows, use set GEMINI_API_KEY=your_gemini_api_key)
 
@@ -81,13 +81,13 @@ export GEMINI_API_KEY='your_gemini_api_key'
 
 Before running the application, ensure you have installed the necessary libraries. In particular, install the yt_dlp library:
 
-pip install yt_dlp
-
+    pip install yt_dlp
+  
 ### Execution
 
 After configuring your API keys, client IDs, and secrets, you can run the main application using your favorite Python IDE or via the command line:
 
-python main.py
+    python main.py
 
 This will execute the entire automation process, including video downloading, title and description generation, and uploading to YouTube.
 
