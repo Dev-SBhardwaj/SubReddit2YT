@@ -2,7 +2,7 @@ import os
 from moviepy.editor import VideoFileClip
 
 # Define the directory containing the video files.
-input_dir = r"PATH"
+input_dir = r"ENTER_YOUR_DOWNLOADED_VIDEO_PATH"
 
 # Define allowed video file extensions.
 allowed_ext = [".mp4", ".mov", ".avi", ".mkv"]
